@@ -2,10 +2,10 @@ import pandas as pd
 from joblib import load
 from pyexpat import model
 
-model_rest = load("Artifacts\model_rest.joblib")
-model_young = load("Artifacts\model_young.joblib")
-scaler_rest = load("Artifacts\scaler_rest.joblib")
-scaler_young = load("Artifacts\scaler_young.joblib")
+model_rest = load("Artifacts/model_rest.joblib")
+model_young = load("Artifacts/model_young.joblib")
+scaler_rest = load("Artifacts/scaler_rest.joblib")
+scaler_young = load("Artifacts/scaler_young.joblib")
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
